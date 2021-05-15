@@ -49,7 +49,7 @@
 
 	Executado o comando corretamente, irá ser criada uma pasta "bin".
 
-4. Mova a pasta (com seu conteúdo) com/fxml/ para bin/fxml/. 
+4. Mova a pasta fxml/ (com seu conteúdo) para bin/fxml/. 
 
 5. Execute o programa com o seguinte comando, no mesmo diretório onde a  pasta bin/ está:
 

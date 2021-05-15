@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.paulovinicius.cadastro.fx.TelaInicialController">
+	<children>
+		<TableView fx:id="tabela" layoutX="5.0" layoutY="51.0" onMouseClicked="#clienteSelecionado" prefHeight="286.0" prefWidth="596.0">
+			<columns>
+				<TableColumn fx:id="campanhaColuna" prefWidth="186.0" text="Campanha" />
+				<TableColumn fx:id="clienteColuna" prefWidth="185.0" text="Cliente" />
+				<TableColumn fx:id="dataDeInicioColuna" prefWidth="115.0" text="Data de início" />
+				<TableColumn fx:id="dataDeFimColuna" prefWidth="109.0" text="Data de fim" />
+			</columns>
+		</TableView>
+		<Text layoutX="306.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes" textAlignment="CENTER" wrappingWidth="188.40625">
+			<font>
+				<Font size="34.0" />
+			</font>
+		</Text>
+		<Text layoutX="649.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtrar por:" textAlignment="CENTER" wrappingWidth="105.4541015625">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<TextField fx:id="nomeCaixaTexto" layoutX="607.0" layoutY="68.0" prefHeight="24.0" prefWidth="188.0" />
+		<Text layoutX="607.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome do cliente" />
+		<Text layoutX="607.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de inicio" />
+		<Text layoutX="607.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de fim" />
+		<Button fx:id="botaoAdicionarCliente" layoutX="608.0" layoutY="285.0" mnemonicParsing="false" onAction="#botaoAdicionarCliente" prefHeight="24.0" prefWidth="188.0" text="Adicionar cliente" />
+		<Button fx:id="botaoDeletarCliente" layoutX="608.0" layoutY="313.0" mnemonicParsing="false" onAction="#botaoDeletarCliente" prefHeight="24.0" prefWidth="188.0" text="Deletar cliente" />
+      <Button fx:id="botaoFiltrar" layoutX="607.0" layoutY="205.0" mnemonicParsing="false" onAction="#botaoFiltrar" prefHeight="24.0" prefWidth="188.0" text="Filtrar" />
+      <Text layoutX="14.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dados do cliente:" wrappingWidth="188.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor total investido:" />
+      <Text layoutX="14.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade máxima de visualizações:" />
+      <Text layoutX="14.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade máxima de cliques:" />
+      <Text layoutX="14.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade máxima de compartilhamentos:" />
+      <Text fx:id="valorTotalInvestidoTexto" layoutX="158.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="QuantidadeMaxVisTexto" layoutX="272.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="QuantidadeMaxCliquesTexto" layoutX="235.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="QuantidadeMaxCompTexto" layoutX="318.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="165.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="608.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+      <Text fx:id="statusTexto" layoutX="608.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="188.0" />
+      <Text layoutX="14.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Investimento diario:" />
+      <Text fx:id="investimentoDiarioTexto" layoutX="153.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="239.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Text>
+      <DatePicker fx:id="dataInicioCaixaTexto" layoutX="607.0" layoutY="108.0" prefHeight="24.0" prefWidth="188.0" />
+      <DatePicker fx:id="dataFimCaixaTexto" layoutX="607.0" layoutY="147.0" prefHeight="24.0" prefWidth="188.0" />
+      <Button fx:id="limparFiltroBotao" layoutX="608.0" layoutY="233.0" mnemonicParsing="false" onAction="#limparFiltroBotao" prefHeight="24.0" prefWidth="188.0" text="Limpar filtro" />
+      <CheckBox fx:id="intervaloSelecao" layoutX="607.0" layoutY="176.0" mnemonicParsing="false" text="Dentro deste intervalo" />
+	</children>
+</AnchorPane>

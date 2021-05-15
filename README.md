@@ -63,5 +63,52 @@ Se o procedimento fora feito corretamente, o programa deve abrir.
 
 # Utilizando o programa
 
-Eis a tela que você verá ao abrir o programa:
+## Tela inicial
+Primeira tela a ser exibida ao executar o programa. Eis uma imagem e descrição das funções apresentadas:
 
+![Primeira tela](https://i.imgur.com/XFi9Meg.png)
+1. Exibe a campanha, nome do cliente e data de início e fim da campanha. Pode ser reordenado clicando em seus títulos de exibição.
+
+2. Opções de filtro. É possível filtrar utilizando apenas um ou uma combinação dos três itens a seguir:
+
+	- Nome do cliente;
+	- Data inicial da campanha;
+	- Data de término da campanha.
+
+	Caso marcado "Dentro deste intervalo", é necessário preencher ambas as datas. Esta opção filtra todas as campanhas que estarão ocorrendo neste período de tempo. Desmarcada a opção, irá aparecer apenas resultados onde a campanha começa e/ou termina com as datas preenchidas.
+
+	É necessário clicar em "Aplicar filtro" para o filtro entrar em efeito. Clique em "Limpar filtro" para exibir todos os dados novamente. Clique no ícone da direita das caixas de texto referente às datas para preenchê-las. O campo de texto para busca de clientes é *case sensitive*. 
+
+3. Vai para a tela onde é possível adicionar novos clientes. Explicação mais abaixo.
+
+4. Deleta um cliente selecionado. 
+
+5. Exibe os dados do clientes selecionado. Os dados são calculados utilizando as regras do primeiro desafio:
+
+-   a cada 100 pessoas que visualizam o anúncio, 12 clicam nele;
+-   a cada 20 pessoas que clicam no anúncio, 3 compartilham nas redes sociais;
+-   cada compartilhamento nas redes sociais gera 40 novas visualizações;
+-   30 pessoas visualizam o anúncio original (não compartilhado) a cada R$ 1,00 investido;
+-   o mesmo anúncio é compartilhado no máximo 4 vezes em sequência.
+
+6. Exibe o status das ações realizadas pelo usuário, por exemplo: cliente deletado com sucesso ou não, filtro aplicado, filtro limpo, entre outros.
+
+## Tela "Adicionar cliente"
+Tela que é exibida ao clicar no botão "Adicionar cliente", na tela inicial. Eis uma imagem da tela e descrição de suas funções:
+
+![Segunda tela](https://i.imgur.com/glqIslb.png)
+1. Nome do anúncio. Pode incluir letras e números;
+
+2. Nome do cliente. Pode incluir letras e números;
+
+3. Data de início. Clique no ícone na direita da caixa de texto para selecionar uma data;
+
+4. Data de fim. Clique no ícone na direita da caixa de texto para selecionar uma data;
+
+5. Investimento por dia. Pode ser número fracionário;
+
+6. Botão para inserir o cliente no banco de dados;
+
+7. Exibe se o cliente fora adicionado com sucesso ou se houve algum erro, tais como: data de fim é antes da data de início, valor de investimento inválido, etc.;
+
+8. Volta para a tela de início.

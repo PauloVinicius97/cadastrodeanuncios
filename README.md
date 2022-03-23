@@ -1,4 +1,4 @@
-﻿# Complilando o programa
+﻿# Compilando o programa
  OBS.: indiquei o Oracle 10g e Oracle JDBC 6 no tutorial pois foram estes que utilizei. É possível que funcione em versões mais atualizadas. Utilizei Linux para a compilação.
  
  1. Utilize um banco Oracle 10g e crie as seguintes tabela, sequência e trigger:
